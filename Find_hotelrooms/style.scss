@@ -1,0 +1,146 @@
+@import 'nullstyle.scss';
+
+
+// Шаблоны для верстки
+
+%styleDate {
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Montserrat;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+%styleButton {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    width: 320px;
+    height: 44px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+//----------
+
+
+
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 99px repeat(3, 1fr);
+    grid-template-areas: 
+    "t t"
+    "a d"
+    "q q"
+    "b b";
+}
+
+
+.container__text {
+    color: #1F2041;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    grid-area: t;
+    padding: 40px 0px 0px 30px;
+}
+
+.container__arrival {
+    color: #1F2041;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    grid-area: a;
+    padding: 21px 0px 0px 30px;
+    .arrival__date {
+        margin-top: 5.44px;
+        input {
+            @extend %styleDate;
+        }
+    }
+}
+
+.container__departure {
+    color: #1F2041;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    grid-area: d;
+    padding: 21px 30px 0px 20px;
+    .departure__date {
+        margin-top: 5.44px;
+        input {
+            @extend %styleDate;
+        }
+    }
+}
+
+.container__quests {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding: 20.56px 30px 0px 30px;
+    grid-area: q;
+    .quests__number {
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-top: 5.44px;
+        select {
+            width: 315px;
+            height: 44px;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+
+}
+
+.container__button {
+    padding: 30px;
+    grid-area: b;
+    button {
+        @extend %styleButton;
+    }
+
+}
+
+
+

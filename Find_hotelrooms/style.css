@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container__arrival .arrival__date input, .container__departure .departure__date input {
+  width: 150px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.container__button button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.container {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 99px (1fr)[3];
+      grid-template-rows: 99px repeat(3, 1fr);
+      grid-template-areas: "t t" "a d" "q q" "b b";
+}
+
+.container__text {
+  color: #1F2041;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: t;
+  padding: 40px 0px 0px 30px;
+}
+
+.container__arrival {
+  color: #1F2041;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: a;
+  padding: 21px 0px 0px 30px;
+}
+
+.container__arrival .arrival__date {
+  margin-top: 5.44px;
+}
+
+.container__departure {
+  color: #1F2041;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
+  padding: 21px 30px 0px 20px;
+}
+
+.container__departure .departure__date {
+  margin-top: 5.44px;
+}
+
+.container__quests {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  padding: 20.56px 30px 0px 30px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: q;
+}
+
+.container__quests .quests__number {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5.44px;
+}
+
+.container__quests .quests__number select {
+  width: 315px;
+  height: 44px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.container__button {
+  padding: 30px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: b;
+}
+/*# sourceMappingURL=style.css.map */
