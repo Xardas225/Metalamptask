@@ -5,6 +5,53 @@
 @import './import/adaptive.scss';
 // _________
 
+
+%styleheader {
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.header {
+    @extend %styleheader;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        &__comein {
+
+        }
+        &__checkin {
+
+        }
+    }
+}
+
 .container {
+    margin: 0 auto;
     max-width: 1160px;
 }
+
+.menu {
+    flex: 1 1 auto;
+    &__list {
+        display: flex;
+        justify-content: center;
+        padding: 26px 0px;
+    }
+    &__link {
+        align-items: stretch;
+        margin: 0px 20px;
+    }   
+}
+
