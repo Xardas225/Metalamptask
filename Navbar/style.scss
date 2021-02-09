@@ -1,0 +1,10 @@
+// Обнуление
+@import './import/nullstyle.scss';
+// _________
+// Брейкпоинты под адаптив
+@import './import/adaptive.scss';
+// _________
+
+.container {
+    max-width: 1160px;
+}
