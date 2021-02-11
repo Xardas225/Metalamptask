@@ -1,0 +1,72 @@
+@import 'nullstyle.scss';
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    width: 270px;
+    height: 257px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+}
+
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    &__boldlux {
+        text-transform: uppercase;
+        color: #1F2041;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 17px;
+        padding: 20px 0px 0px 20px;
+    }
+    &__boldlux b {
+        font-size: 14px;
+    }
+    &__boldlux span {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #BC9CFF;
+    }
+    &__sum {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Montserrat;
+        padding: 24px 17px 0px 0px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}
+
+.line {
+    padding-top: 12px;
+    margin: 0 auto;
+    border-bottom:1px solid  rgba(31, 32, 65, 0.1);
+    width: 230px;
+    position:relative;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    
+    &__stars {
+        padding: 8px 0px 19px 20.26px;
+    }
+    &__reviews {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        padding: 11.56px 20px 21.44px 0px;
+    }
+}
