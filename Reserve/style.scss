@@ -1,8 +1,42 @@
 @import 'nullstyle.scss';
 
+
+// Шаблоны для верстки
+
+%styleDate {
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Montserrat;
+    color: rgba(31, 32, 65, 0.75);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+%styleButton {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    width: 320px;
+    height: 44px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+//----------
+
+
+
 .container {
-    display: flex;
-    flex-direction: column;
     width: 380px;
     height: 511px;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -10,24 +44,155 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: #FFFFFF;
-    &__text {
-        padding: 40px 30px 0px 30px;
-    }
-    &__bold {
-       font-family: Quicksand;
-       font-size: 24px;
-       line-height: 30px;
-       font-weight: 700;
-       color: #1F2041;
-    }
-    &__lux {
+    &__quests {
+        color: #1F2041;
+        font-family: Montserrat;
         font-weight: bold;
         font-size: 12px;
         line-height: 15px;
-        font-family: Montserrat;
         text-transform: uppercase;
+        padding: 20px 30px 0px 30px;
+        select {
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: 320px;
+            height: 44px;
+            margin-top: 5px;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 24px;  
+            color: rgba(31, 32, 65, 0.75);
+            text-indent: 5px;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+    &__button {       
+        padding: 30px;
+        button {
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            width: 320px;
+            height: 44px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+        }
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    &__boldlux {
+        text-transform: uppercase;
+        color: #1F2041;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 17px;
+        padding: 40px 0px 0px 30px;
+    }
+    &__boldlux b {
+        font-size: 14px;
+    }
+    &__boldlux span {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
         color: #BC9CFF;
     }
     &__sum {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Montserrat;
+        padding: 43px 30px 0px 0px;
+        color: rgba(31, 32, 65, 0.5);
     }
 }
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 0px 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    input {
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 150px;
+        height: 44px;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+        text-transform: uppercase;
+        text-indent: 5px;
+        margin-top: 5.44px;
+    }
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    padding: 20px  30px 0px 30px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    &__one  {
+        margin-bottom: 10px;
+        span {
+            float: right;
+        }
+    }
+    &__two  {
+        margin-bottom: 10px;
+        span {
+            float: right;
+        }
+    }
+    &__three  {
+        margin-bottom: 10px;
+        span {
+            float: right;
+        }
+    }
+    
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 0px 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+    &__sum {
+        span {
+            float: right;
+        }
+    }
+}
+
+
+
+
+
