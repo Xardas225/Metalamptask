@@ -144,8 +144,35 @@ body {
           justify-content: space-between;
 }
 
-.rating__stars {
+.rating__items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   padding: 8px 0px 19px 20.26px;
+}
+
+.rating__item {
+  color: #BC9CFF;
+  font-size: 26px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.rating__item:hover, .rating__item:hover ~ .rating__item {
+  content: url(./img/star.svg);
+}
+
+.rating__items[data-total-value="1"] .rating__item:nth-child(n + 5),
+.rating__items[data-total-value="2"] .rating__item:nth-child(n + 4),
+.rating__items[data-total-value="3"] .rating__item:nth-child(n + 3),
+.rating__items[data-total-value="4"] .rating__item:nth-child(n + 2),
+.rating__items[data-total-value="5"] .rating__item:nth-child(n + 1) {
+  content: url(./img/star.svg);
 }
 
 .rating__reviews {

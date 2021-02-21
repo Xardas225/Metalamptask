@@ -57,9 +57,27 @@ body {
 .rating {
     display: flex;
     justify-content: space-between;
-    
-    &__stars {
+    &__items {
+        display: inline-flex;
+        flex-direction: row-reverse;
         padding: 8px 0px 19px 20.26px;
+    }
+    &__item {
+        color: #BC9CFF;
+        font-size: 23px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    &__item:hover , &__item:hover ~ &__item {
+        content: url(./img/star.svg); 
+        
+    }
+    &__items[data-total-value="1"] &__item:nth-child(n + 5),
+    &__items[data-total-value="2"] &__item:nth-child(n + 4),
+    &__items[data-total-value="3"] &__item:nth-child(n + 3),
+    &__items[data-total-value="4"] &__item:nth-child(n + 2),
+    &__items[data-total-value="5"] &__item:nth-child(n + 1) {
+        content: url(./img/star.svg);
     }
     &__reviews {
         font-family: Montserrat;

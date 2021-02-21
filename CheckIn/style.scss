@@ -79,7 +79,7 @@ body {
     &__gender {
         padding: 10px 0px 0px 30px;
         input  {
-            margin-right: 10px ;
+           margin-right: 10px ;
         }
         input:nth-child(2n) {
             margin-left: 10px;
@@ -156,3 +156,7 @@ body {
         }
     }
 }    
+
+#woman {
+    padding-left: 10px ;
+}
